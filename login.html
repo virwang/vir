@@ -1,0 +1,98 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <title>login page </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1000, initial-scale=1.5, maximum-scale=1, minimum-scale=1">
+    <!-- will translate into this '@viewport' block: -->
+
+    <script src="./javascript/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./javascript/login0101.js"></script>
+    <script> console.log("testing web app")</script>
+</head>
+
+<body>
+  <!-- <marquee><h1> this is login page</h1></marquee> -->
+  <!-- <form name="vinform">
+    Enter id:<input type="text" name="email" onkeyup="sendInfo()">
+  </form> -->
+
+  <!-- <sql:setDataSource var = "snapshot" driver = "com.mysql.jdbc.Driver"
+    url = "jdbc:mysql://localhost/mydatabase1"
+    user = "root" password = "1001"/>
+  <sql:update dataSource = "${snapshot}" var = "count">
+    UPDATE users SET WHERE last = 'Ali'
+    <sql:param value = "${user_id}"/>
+  <sql:query dataSource = "${snapshot}" var = "result">
+      SELECT * from users;
+  </sql:query> -->
+
+  <div class="header">
+      <h1><a href="#" target="_blank">以物易物網 Barter Economy Web</a></h1>
+  </div>
+
+  <div class="topnav">
+      <a href="#">首頁<br>Home</a>
+      <a href="#">登入<br>longin</a>
+      <a href="#">會員專區<br>Members Only</a>
+      <a href="#">聯絡我們<br>  Connect Us</a>
+      <a href="#">最新消息<br>  News</a>
+  </div>
+
+<div class="subnav">
+    <ul>
+      <li><a href="#home" target="_blank">首頁/會員專區</a></li>
+      <li><a href="#modify">修改會員資料</a></li>
+      <li><a href="#record">交易紀錄</a></li>
+      <li><a href="#recommod">誰評價過我? </a></li>
+      <li><a href="#chat">聊聊</a></li>
+    </ul>
+</div>
+
+
+<div class ="container" name="container">
+  <h2 id= "head">登入會員/修改會員資料</h2>
+      <!-- <form  action="login.jsp" method="get" name="vinform"> -->
+      <form name="vinform">
+        <div class="form_group" name="form_group">
+          <!-- <label for="account" id="text-account">會員帳號</label> <br> -->
+                <!-- <lable><input type="text" class="form_group" id="account" name="account" placeholder="15個英數字組合"><br></lable> -->
+
+          User Account:<br>
+          <input type="text" id="account"><br><br>
+
+          <!-- <label for="email" class="form_group"> email</label> <br> -->
+          Email:<br>
+          <input type="text" class="form_group" id="email" name="email" placeholder="輸入email帳號"><br>
+          Password:<br>
+          <input type="text" class="form_group" id="password" name="passWord" placeholder="8個英數字組合。"><br>
+          Confirm Password:<br>
+          <input type="text" class="form_group" id="confirm" name="confirm" placeholder="確認密碼"><br>
+          <!-- <label for="UserName">UserName</label><br> -->
+          User Name: <br>
+          <input type="text" class="form_group" id="username" name="username" placeholder="請填入姓名">
+          <!-- this is a confirm button -->
+          <input type="button" class="submit" value="確認送出" onClick="sendInfo()">
+          <p id="amit"> .... </p>
+        </div>
+    </form>
+
+      <!-- <c:forEach var = "row" items = "${result.rows}">
+        <lable><c:out value = "${row.account}"/></lable>
+        <lable><c:out value = "${row.password}"/></lable>
+        <lable><c:out value = "${orw.confirm}"/></lable>
+        <lable><c:out value = "${row.username}"/></lable>
+      </c:forEach> -->
+</div>
+
+<!-- foot -->
+<div class="footer">
+    <h5 id="ft0" href="#" target="_blank">以物易物網<br>Barter Economy Web</h5>
+    <p id="ft1" href="#" target="_blank">新手指南</p>
+    <p id="ft2" href="#" target="_blank">常見問題</p>
+    <p id="ft3" href="#" target="_blank">禁止刊登</p>
+    <p id="ft4">版權所有<br>以物易物網,All Rights Reserved</p>
+</div>
+
+</body>
+</html>
